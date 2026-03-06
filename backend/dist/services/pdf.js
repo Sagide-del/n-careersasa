@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generatePdfReport = void 0;
+exports.generatePdfReport = generatePdfReport;
 const pdfkit_1 = __importDefault(require("pdfkit"));
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
@@ -79,4 +79,3 @@ function generatePdfReport(opts) {
         stream.on("error", reject);
     });
 }
-exports.generatePdfReport = generatePdfReport;

@@ -3,7 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.db = exports.openDb = void 0;
+exports.db = void 0;
+exports.openDb = openDb;
 const sqlite3_1 = __importDefault(require("sqlite3"));
 const sqlite_1 = require("sqlite");
 const path_1 = __importDefault(require("path"));
@@ -14,7 +15,6 @@ async function openDb() {
         driver: sqlite3_1.default.Database
     });
 }
-exports.openDb = openDb;
 // For backward compatibility, create a db object that mimics better-sqlite3
 exports.db = {
     exec: async (sql) => {

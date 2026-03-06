@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.initializeDatabase = void 0;
+exports.initializeDatabase = initializeDatabase;
 const client_1 = require("./client");
 async function initializeDatabase() {
     console.log('Initializing database...');
@@ -51,4 +51,3 @@ async function initializeDatabase() {
     console.log('Database initialized');
     await db.close();
 }
-exports.initializeDatabase = initializeDatabase;

@@ -3,7 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.stkPush = exports.mpesaPassword = exports.getAccessToken = void 0;
+exports.getAccessToken = getAccessToken;
+exports.mpesaPassword = mpesaPassword;
+exports.stkPush = stkPush;
 const axios_1 = __importDefault(require("axios"));
 function baseUrl() {
     const env = (process.env.MPESA_ENV || "sandbox").toLowerCase();
@@ -22,14 +24,12 @@ async function getAccessToken() {
     });
     return res.data.access_token;
 }
-exports.getAccessToken = getAccessToken;
 function mpesaPassword(timestamp) {
     const shortcode = process.env.MPESA_SHORTCODE || "";
     const passkey = process.env.MPESA_PASSKEY || "";
     const raw = `${shortcode}${passkey}${timestamp}`;
     return Buffer.from(raw).toString("base64");
 }
-exports.mpesaPassword = mpesaPassword;
 async function stkPush(opts) {
     const token = await getAccessToken();
     const shortcode = process.env.MPESA_SHORTCODE || "";
@@ -56,4 +56,3 @@ async function stkPush(opts) {
     });
     return res.data;
 }
-exports.stkPush = stkPush;

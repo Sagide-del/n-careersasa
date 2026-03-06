@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.checkRequiredEnvVars = void 0;
+exports.checkRequiredEnvVars = checkRequiredEnvVars;
 // src/utils/envCheck.ts
 function checkRequiredEnvVars() {
     const required = ['PORT'];
@@ -23,4 +23,3 @@ function checkRequiredEnvVars() {
     });
     return true;
 }
-exports.checkRequiredEnvVars = checkRequiredEnvVars;
