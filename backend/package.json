@@ -5,7 +5,7 @@
     "main":  "dist/index.js",
     "scripts":  {
                     "dev":  "tsx watch src/index.ts",
-                    "build":  "node build.js",
+                    "build":  "echo \u0027Skipping build - using pre-compiled files\u0027",
                     "start":  "node dist/index.js",
                     "db:init":  "node dist/db/init.js"
                 },
