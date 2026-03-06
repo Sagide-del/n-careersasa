@@ -4,13 +4,13 @@
     "private":  true,
     "main":  "dist/index.js",
     "scripts":  {
-                    "dev":  "tsx watch src/index.ts",
-                    "build":  "tsc -p tsconfig.json",
-                    "start":  "node dist/index.js"
+                    "start":  "tsx src/index.ts",
+                    "dev":  "tsx watch src/index.ts"
                 },
     "dependencies":  {
                          "dotenv":  "^16.4.5",
                          "express":  "^4.19.2",
+                         "tsx":  "^4.15.6",
                          "cors":  "^2.8.5"
                      },
     "devDependencies":  {
