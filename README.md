@@ -1,6 +1,6 @@
 # CareerSasa
 
-CareerSasa is a working local career-guidance system built with React on the frontend and Express on the backend.
+CareerSasa is a working career-guidance system built with React on the frontend and Express on the backend.
 
 ## Working flow
 
@@ -55,6 +55,34 @@ To stop the containers:
 ```powershell
 docker compose down
 ```
+
+## Deploy on Railway
+
+Deploy this repo as two Railway services:
+
+### 1. Backend service
+
+- Repository root for service: `backend`
+- Railway config file used: `backend/railway.json`
+- Public URL example: `https://your-backend.up.railway.app`
+
+### 2. Frontend service
+
+- Repository root for service: project root
+- Railway config file used: `railway.json`
+- Set environment variable before deploy:
+
+```bash
+REACT_APP_API_BASE_URL=https://your-backend.up.railway.app
+```
+
+### Railway order
+
+1. Create backend service from the `backend` folder.
+2. Copy the backend public Railway URL.
+3. Create frontend service from the repo root.
+4. Set `REACT_APP_API_BASE_URL` on the frontend service to the backend URL.
+5. Redeploy the frontend so the React build picks up the API URL.
 
 ## Docker notes
 
