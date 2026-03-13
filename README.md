@@ -103,3 +103,4 @@ REACT_APP_API_BASE_URL=http://localhost:8080
 - Assessment drafts are saved in the browser.
 - Backend data persists locally in `backend/data/app-data.json`.
 - Payment is simulated locally through the verify-payment flow.
+"# Force redeploy" 
