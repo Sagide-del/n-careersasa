@@ -42,3 +42,5 @@ function HomeScreen({ onLogin, onRegister, health, healthError }) {
   );
 }
 
+
+export default App;
