@@ -9,7 +9,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.71.2",
     "react-scripts": "5.0.1",
-    "serve": "^14.2.4",
+    "serve": "^14.2.6",
     "zod": "^4.3.6"
   },
   "scripts": {
@@ -22,10 +22,20 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app"]
+    "extends": [
+      "react-app"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
