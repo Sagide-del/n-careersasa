@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": "user_5bf1f488-8e62-4daa-88fb-3c0460379d2e",
+      "name": "Test Student",
+      "email": "tester_1773091571198@example.com",
+      "password": "secret123",
+      "paid": true,
+      "paymentStatus": "paid",
+      "lastResultId": "result_d5c3f53d-117b-4cbb-8aaf-02ef9ef92850",
+      "createdAt": "2026-03-09T21:26:12.120Z",
+      "paidAt": "2026-03-09T21:26:12.237Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "212626b5783054d9a31f4e09307c8e5703ad7ae342ed6fb3",
+      "userId": "user_5bf1f488-8e62-4daa-88fb-3c0460379d2e",
+      "createdAt": "2026-03-09T21:26:12.179Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "result_d5c3f53d-117b-4cbb-8aaf-02ef9ef92850",
+      "userId": "user_5bf1f488-8e62-4daa-88fb-3c0460379d2e",
+      "createdAt": "2026-03-09T21:26:12.289Z",
+      "profile": {
+        "kcse": {
+          "meanGrade": "B+",
+          "subjects": [
+            {
+              "name": "English",
+              "grade": "A-"
+            },
+            {
+              "name": "Mathematics",
+              "grade": "A"
+            },
+            {
+              "name": "Computer Studies",
+              "grade": "A-"
+            },
+            {
+              "name": "Physics",
+              "grade": "B+"
+            }
+          ]
+        },
+        "interests": {
+          "hobbies": [
+            "Coding",
+            "Gaming",
+            "Leadership"
+          ]
+        },
+        "social": {
+          "platforms": [
+            {
+              "name": "YouTube",
+              "hoursPerDay": 2,
+              "purpose": [
+                "Learning"
+              ]
+            }
+          ]
+        },
+        "family": {
+          "birthOrder": "firstborn",
+          "guardianSupport": 4,
+          "notes": "Supportive home."
+        },
+        "briggs": {
+          "E": 55,
+          "I": 45,
+          "S": 40,
+          "N": 60,
+          "T": 70,
+          "F": 30,
+          "J": 52,
+          "P": 48,
+          "type": "ENTJ"
+        }
+      },
+      "student_summary": {
+        "strengths": [
+          "Strong quantitative reasoning from Mathematics performance.",
+          "Clear communication ability supported by language subjects.",
+          "Leadership and persuasion interests stand out strongly."
+        ],
+        "growth_areas": [
+          "Keep building consistency through projects, mentorship, and exam preparation."
+        ]
+      },
+      "top_3_career_pathways": [
+        {
+          "rank": 1,
+          "pathway_name": "Software Engineering",
+          "why_fit": [
+            "Balances logical problem solving with practical digital creation.",
+            "Relevant subject score: 33.",
+            "Your interests reinforce this pathway."
+          ],
+          "suggested_programmes": [
+            {
+              "programme": "BSc Software Engineering",
+              "kuccps_notes": "Suitable to review entry clusters and cut-off trends during application."
+            },
+            {
+              "programme": "BSc Computer Science",
+              "kuccps_notes": "Suitable to review entry clusters and cut-off trends during application."
+            }
+          ],
+          "next_steps": [
+            "Build one coding project this month.",
+            "Practice math and logic consistently."
+          ],
+          "confidence": 96
+        },
+        {
+          "rank": 2,
+          "pathway_name": "Business and Entrepreneurship",
+          "why_fit": [
+            "A good path for learners who enjoy initiative, persuasion, and commercial thinking.",
+            "Relevant subject score: 23.",
+            "Your interests reinforce this pathway."
+          ],
+          "suggested_programmes": [
+            {
+              "programme": "BCom",
+              "kuccps_notes": "Suitable to review entry clusters and cut-off trends during application."
+            },
+            {
+              "programme": "BSc Entrepreneurship",
+              "kuccps_notes": "Suitable to review entry clusters and cut-off trends during application."
+            }
+          ],
+          "next_steps": [
+            "Start a small business experiment.",
+            "Track costs, sales, and lessons learned."
+          ],
+          "confidence": 65
+        },
+        {
+          "rank": 3,
+          "pathway_name": "Law and Public Policy",
+          "why_fit": [
+            "Fits learners who communicate clearly and enjoy structured argument.",
+            "Relevant subject score: 11.",
+            "Your interests reinforce this pathway."
+          ],
+          "suggested_programmes": [
+            {
+              "programme": "Bachelor of Laws",
+              "kuccps_notes": "Suitable to review entry clusters and cut-off trends during application."
+            },
+            {
+              "programme": "BA Political Science",
+              "kuccps_notes": "Suitable to review entry clusters and cut-off trends during application."
+            }
+          ],
+          "next_steps": [
+            "Join debate or public speaking opportunities.",
+            "Read current affairs weekly."
+          ],
+          "confidence": 52
+        }
+      ]
+    }
+  ]
+}
